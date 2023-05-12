@@ -16,5 +16,9 @@
 				</dataSource>
 		</environment>
 	</environments>
+
+	<mappers>
+		<mapper resource="/com/spring/mapper/CustomerMapper.xml"></mapper>
+	</mappers>
 		
 </configuration>

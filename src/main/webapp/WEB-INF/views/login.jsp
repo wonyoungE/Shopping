@@ -33,7 +33,7 @@
 
     <!-- Navbar Start -->
     <div class="container-fluid">
-        <div class="row border-top px-xl-5">
+       <div class="row border-top px-xl-5">
             <div class="col-lg-9">
                 <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0">
                     <a href="" class="text-decoration-none d-block d-lg-none">
@@ -44,21 +44,14 @@
                     </button>
                     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                         <div class="navbar-nav mr-auto py-0">
-                            <a href="index" class="nav-item nav-link">Home</a>
+                            <a href="home" class="nav-item nav-link">Home</a>
                             <a href="shop" class="nav-item nav-link">Shop</a>
                             <a href="cart" class="nav-item nav-link">Shopping Cart</a>
                         </div>
                         <!-- login - o -->
-                        <c:if test="${empty sessionScope.userId}">
-	                        <div class="navbar-nav ml-auto py-0">
-	                            <a href="login" class="nav-item nav-link">Login</a>
-	                        </div>
-                        </c:if>
-                        <c:if test="${not empty sessionScope.userId}">
-	                        <div class="navbar-nav ml-auto py-0">
-	                            <a href="logout" class="nav-item nav-link">logout</a>
-	                        </div>
-                        </c:if>
+                        <div class="navbar-nav ml-auto py-0">
+                            <a href="login" class="nav-item nav-link">Login</a>
+                        </div>
                     </div>
                 </nav>
             </div>
@@ -89,16 +82,14 @@
             <div class="col-lg-7 mb-5">
                 <div class="contact-form">
                     <div id="success"></div>
-                    <form action="" name="loginForm" id="loginForm" novalidate="novalidate">  <!-- name, id 바꿈 -->
+                    <form action="/login" name="loginForm" id="loginForm" method="POST" novalidate="novalidate" >
                         <div class="control-group">
-                            <input type="text" class="form-control" id="id" placeholder="Id"
+                            <input type="text" class="form-control" id="id" placeholder="Id" name="id"
                                 required="required" data-validation-required-message="Please enter your id" style="width: 300px;"/>
-                            <p class="help-block text-danger"></p>
                         </div>
                         <div class="control-group">
-                            <input type="password" class="form-control" id="pw" placeholder="Password"
+                            <input type="password" class="form-control" id="pw" placeholder="Password" name="pw"
                                 required="required" data-validation-required-message="Please enter your password" style="width: 300px;"/>
-                            <p class="help-block text-danger"></p>
                         </div>
                         <div>
                             <!-- id 변경함 -->

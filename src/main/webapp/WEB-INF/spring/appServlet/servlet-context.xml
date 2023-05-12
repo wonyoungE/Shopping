@@ -25,11 +25,12 @@
 	
 	<interceptors>
 		<interceptor>
-			<mapping path=""/>
+			<mapping path="/cart"/>
 			<mapping path="/logout"/>
 			<!-- exclude-mapping : 하위 경로에는 인터셉터 동작 X -->
-			<exclude-mapping path=""/>
-			<exclude-mapping path=""/>
+			<exclude-mapping path="/home"/>
+			<exclude-mapping path="/login"/>
+			<exclude-mapping path="/shop"/>		
 			<beans:bean id="sessionInterceptor" 
 						class="com.spring.interceptor.SessionInterceptor" />
 		</interceptor>	

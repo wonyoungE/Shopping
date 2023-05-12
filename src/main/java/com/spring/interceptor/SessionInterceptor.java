@@ -23,7 +23,7 @@ public class SessionInterceptor implements HandlerInterceptor {
 		
 		if(session == null || session.getAttribute("userId") == null) {
 			
-			response.sendRedirect("/main");
+			response.sendRedirect("/home");
 			return false;
 		}
 		

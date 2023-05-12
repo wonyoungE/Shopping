@@ -14,7 +14,11 @@ CREATE TABLE CUSTOMER(
     CONSTRAINT customer_pk PRIMARY KEY (customer_id)
     );
 -- customer TABLE 데이터 삽입
-INSERT INTO CUSTOMER VALUES('A', '000000', 'KIM');
+INSERT INTO CUSTOMER VALUES('json192', 'json1', 'Jackson');
+INSERT INTO CUSTOMER VALUES('jessiee', 'jessi2', 'Jessica');
+INSERT INTO CUSTOMER VALUES('danie123', 'danie3', 'Daniel');
+INSERT INTO CUSTOMER VALUES('judy098', 'july678', 'Judy');
+COMMIT;
 -- ================================ORDER_LIST TABLE==============================================
 CREATE SEQUENCE order_list_seq increment by 1 start with 1;
 CREATE TABLE ORDER_LIST (
