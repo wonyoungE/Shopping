@@ -33,7 +33,8 @@
 
     <!-- Navbar Start -->
     <div class="container-fluid">
-       <div class="row border-top px-xl-5">
+    <!-- 여기 -->
+       <div class="row border-top px-xl-5 justify-content-center">
             <div class="col-lg-9">
                 <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0">
                     <a href="" class="text-decoration-none d-block d-lg-none">
@@ -79,15 +80,16 @@
             <h2 class="section-title px-5"><span class="px-2">Login</span></h2>
         </div>
         <div class="row px-xl-5 flex-column align-items-center justify-content-center">
-            <div class="col-lg-7 mb-5">
+        	<!-- 여기 -->
+            <div class="col-lg-7 mb-5 d-flex flex-row justify-content-center">
                 <div class="contact-form">
                     <div id="success"></div>
                     <form action="/login" name="loginForm" id="loginForm" method="POST" novalidate="novalidate" >
-                        <div class="control-group">
+                        <div class="control-group mb-2">
                             <input type="text" class="form-control" id="id" placeholder="Id" name="id"
                                 required="required" data-validation-required-message="Please enter your id" style="width: 300px;"/>
                         </div>
-                        <div class="control-group">
+                        <div class="control-group mb-3">
                             <input type="password" class="form-control" id="pw" placeholder="Password" name="pw"
                                 required="required" data-validation-required-message="Please enter your password" style="width: 300px;"/>
                         </div>
